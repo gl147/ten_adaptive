@@ -1,0 +1,109 @@
+.wrapper {
+  background: #ca6b6b;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  height: 60px;
+  width: calc(100%);
+  background: #6df215;
+}
+
+.navbar {
+  height: 800px;
+  width: calc(100% / 12 * 3);
+  background: #f25015;
+}
+
+.content {
+  height: 800px;
+  width: calc(100% / 12 * 9);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero {
+  height: 400px;
+  background: #3b4336;
+  width: calc(100%);
+}
+
+.item {
+  height: 200px;
+  width: calc(100% / 9 * 3);
+  background: #5f15f2;
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-image {
+  height: 70%;
+  width: 80%;
+  background-image: url(../img/HIMARS.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    height: 100px;
+    width: calc(100% / 12 * 12);
+    background: #f25015;
+  }
+
+  .content {
+    height: 800px;
+    width: calc(100% / 12 * 12);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    height: 200px;
+    width: calc(100% / 12 * 3);
+    background: #5f15f2;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 100px;
+    width: calc(100% / 12 * 12);
+    background: #f25015;
+  }
+
+  .hero {
+    display: none;
+    height: 400px;
+    background: #3b4336;
+    width: calc(100%);
+  }
+
+  .content {
+    height: 800px;
+    width: calc(100% / 12 * 12);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    height: 200px;
+    width: calc(100% / 12 * 4);
+    background: #5f15f2;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

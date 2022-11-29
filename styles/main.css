@@ -1,0 +1,52 @@
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+.a-block {
+	background: #aa32ff;
+	height: 40px;
+	width: calc(100%/12*3);
+	}
+
+.b-block {
+	background: #aa88ff;
+	height: 40px;
+	width: calc(100%/12*6);
+	}
+
+.c-block {
+	background: #11ad80;
+	height: 40px;
+	width: calc(100%/12*3);
+	}
+
+@media screen and (max-width: 1200px) {
+
+.a-block {
+	width: calc(100%/12*4);
+}
+
+.b-block {
+	width: calc(100%/12*8);
+}
+
+.c-block {
+	width: calc(100%/12*12);
+}
+}
+
+@media screen and (max-width: 800px) {
+
+.a-block {
+	width: calc(100%/12*12)
+}
+
+.b-block {
+	width: calc(100%/12*12)
+}
+
+.c-block {
+	width: calc(100%/12*12)
+}
+
